@@ -1,0 +1,486 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Freehand&family=Lato:wght@300&family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    margin: 0;
+    padding: 0;  
+    background-image: url("./assets/img/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Para que el svg esté detrás del contenido del body */
+  }
+
+.head{
+    margin-bottom: 100px;
+}
+
+
+/* Estilos para el título animado con olas */
+.encabezado {
+    position: relative;
+    overflow: hidden;
+    background-color: #8a5cff;
+}
+
+.titulo {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.609);
+    text-align: center;
+    font-size: 48px;
+    padding: 100px 0;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titulo span {
+    display: block;
+    font-weight: bold;
+    margin: 40px 0px;
+    border-radius: 20px;
+    animation: moveText 4s ease infinite;
+}
+
+.Titulos {
+    background-color: #8a5cff;
+    color: #fff;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+.subTituloh2{
+    display: flex;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    border-radius: 5px;
+    padding-right: 180px;
+    
+    overflow: hidden;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.encabezado img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Estilos para la sección de servicios */
+.servicios {
+    
+    padding: 20px;
+    /* background-color: #f9f9f9; */
+    text-align: center;
+}
+
+.servicios h2 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.servicio {
+    
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.servicio img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.servicio h3 {
+    color: #333;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.servicio p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Estilos adicionales para mejorar la presentación */
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Estilos para hover en los servicios */
+.servicio:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+/* Estilos para la página de contacto */
+.contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e1b1b67;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.contacto label, .contacto input, .contacto textarea, .contacto button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: white;
+    border-radius: 5px;
+}
+
+.contacto textarea {
+    resize: vertical;
+}
+
+.contacto button {
+    background-color: #007bff;
+    /* color: #fff; */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contacto button:hover {
+    background-color: #0056b3;
+}
+
+.body__footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-top: 40px;
+    max-width: 1000px; /* Ajusta el ancho máximo según tus preferencias */
+    margin: 0 auto; /* Establece margen automático para centrar el footer */
+}
+    
+
+  .body__footer__div {
+        display:flex;
+    }
+        
+
+        
+        .body__footer__div a img {
+            display:flex;
+            align-items: right;
+            width: 27px;
+            margin: 10px;
+            color: rgb(109, 21, 21); 
+            text-shadow: rgb(49, 168, 95) 0.1em 0.1em 0.2em;
+        }
+
+        .p_footer{
+            color: #1720c5a4;
+        }
+
+        .whatsapp-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999;
+            animation: whatsappIconAnimation 1s infinite alternate; /* Agregamos una animación de ejemplo */
+        }
+        
+        .whatsapp-icon img {
+            width: 60px; /* Ajusta el tamaño del icono según tus preferencias */
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Agregamos una animación de ejemplo para el icono de WhatsApp */
+        @keyframes whatsappIconAnimation {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(5px);
+            }
+        }
+
+        /* Estilos para la sección de servicios */
+.servicios {
+    padding: 20px;
+    background-color: #13121283;
+    text-align: center;
+    display: flex; /* Agregamos flexbox */
+    flex-wrap: wrap; /* Permitimos que los elementos se ajusten a la línea siguiente si no caben en una sola fila */
+    justify-content: center; /* Centramos los elementos horizontalmente */
+}
+
+.servicios h2 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    flex-basis: 100%; /* Aseguramos que el título ocupe el ancho completo de su contenedor */
+}
+
+.servicio {
+    margin-bottom: 30px;
+    flex-basis: calc(33.333% - 40px); /* Distribuimos los elementos en 3 columnas con espacio entre ellos */
+    max-width: calc(33.333% - 40px); /* Limitamos el ancho máximo de cada servicio para que no se desborde */
+    box-sizing: border-box; /* Incluimos el padding y el border dentro del ancho especificado */
+}
+
+.servicio img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.servicio h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.servicio p {
+    color: #eadddd;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+.experiencia-card {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.experiencia-card p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+.row{
+    margin-top: 300px;
+}
+
+.card{
+    
+    background-color: rgba(50, 50, 50, 0.256);
+    background-blend-mode: soft-light;
+}
+
+
+
+/* Estilos para la sección de contacto */
+.contacto {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contacto__contenido {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contacto h2 {
+    
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contacto p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.contacto__formulario {
+    margin-bottom: 15px;
+}
+
+.contacto__formulario label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.contacto__formulario input,
+.contacto__formulario textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contacto__formulario textarea {
+    resize: vertical;
+}
+
+.contacto__formulario button {
+    background-color: #ae00ff;
+    color: #f9f7f7f1;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contacto__formulario button:hover {
+    background-color: #314f6f;
+}
+
+
+.custom-section {
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-section:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Estilos para el contenido dentro del recuadro */
+.custom-section .content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilos para el título de las secciones */
+.custom-section h2 {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el texto del contenido */
+.custom-section p, .custom-section li {
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Estilos para los enlaces del contenido */
+.custom-section a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.custom-card {
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    margin-left: auto; /* Para alinearla a la derecha */
+    margin-right: 20px; /* Agregamos un margen derecho para separar de los otros elementos */
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-card:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Estilos para el contenido dentro de la card */
+.custom-card .card-body {
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilos para el título de la card */
+.custom-card h5 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el texto del contenido */
+.custom-card p {
+    color: #fff;
+    font-size: 14px;
+}
+
+
+ /* Estilos para el recuadro */
+ .custom-recuadro {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el texto "Empresa de Servicio integral..." */
+.custom-recuadro h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la card */
+.custom-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el hover */
+.custom-card:hover,
+.custom-recuadro:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+
+.div-card-ser{
+    display: flex;
+    align-content: stretch;
+    flex-direction: row-reverse;
+}
+
+img#logo {
+    max-width: 100px; /* Tamaño máximo de 100px de ancho */
+    position: absolute; /* Posición absoluta para ubicarlo en la esquina superior izquierda */
+    top: 10px; /* Ajusta el valor según la distancia deseada desde la parte superior */
+    left: 10px; /* Ajusta el valor según la distancia deseada desde la izquierda */
+    position: fixed;
+}
