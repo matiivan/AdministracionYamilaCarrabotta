@@ -89,9 +89,22 @@ svg {
     /* background-color: #f9f9f9; */
     text-align: center;
 }
+.servicios2 {
+    color: white;
+    margin-top: 40px;
+    padding: 20px;
+    /* background-color: #f9f9f9; */
+    text-align: center;
+    padding: 20px;
+    background-color: #13121241;
+    text-align: center;
+    display: flex; /* Agregamos flexbox */
+    flex-wrap: wrap; /* Permitimos que los elementos se ajusten a la línea siguiente si no caben en una sola fila */
+    justify-content: center; /* Centramos los elementos horizontalmente */
+}
 
 .servicios h2 {
-    color: #007bff;
+    color: #9da7b1;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -237,7 +250,7 @@ svg {
 }
 
 .servicios h2 {
-    color: #007bff;
+    color: #e5e9ed;
     font-size: 24px;
     margin-bottom: 20px;
     flex-basis: 100%; /* Aseguramos que el título ocupe el ancho completo de su contenedor */
@@ -478,9 +491,57 @@ svg {
 }
 
 img#logo {
-    max-width: 100px; /* Tamaño máximo de 100px de ancho */
+    max-width: 200px; /* Tamaño máximo de 100px de ancho */
     position: absolute; /* Posición absoluta para ubicarlo en la esquina superior izquierda */
     top: 10px; /* Ajusta el valor según la distancia deseada desde la parte superior */
     left: 10px; /* Ajusta el valor según la distancia deseada desde la izquierda */
     position: fixed;
 }
+
+
+/* Estilos generales para dispositivos de pantalla grande (escritorio) */
+/* Aquí se colocan los estilos que se aplicarán por defecto */
+
+/* Estilos para dispositivos con un ancho máximo de 768px (tablets y móviles) */
+@media screen and (max-width: 768px) {
+    /* Agregamos un estilo para el encabezado para que sea más compacto */
+    .encabezado {
+      padding: 30px 20px;
+    }
+  
+    /* Ajustamos el tamaño del título para dispositivos móviles */
+    .titulo {
+      font-size: 36px;
+    }
+  
+    /* Estilos para el contenedor de los servicios */
+    .servicios {
+      padding: 10px;
+    }
+  
+    /* Estilos para cada servicio */
+    .servicio {
+      flex-basis: calc(50% - 10px);
+      max-width: calc(50% - 10px);
+      margin-bottom: 15px;
+    }
+  
+    /* Estilos para el pie de página */
+    .body__footer {
+      padding-top: 20px;
+    }
+  
+    /* Estilos para el ícono de WhatsApp */
+    .whatsapp-icon {
+      bottom: 70px;
+      right: 10px;
+    }
+  
+    /* Estilos para el logotipo */
+    img#logo {
+      max-width: 100px;
+      top: 10px;
+      left: 10px;
+    }
+  }
+  
