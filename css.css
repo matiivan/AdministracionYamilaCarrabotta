@@ -552,5 +552,12 @@ img#logo {
     .subTituloh2{
         margin-left: 20px;
     }
+    .div-card-ser {
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
   }
   
