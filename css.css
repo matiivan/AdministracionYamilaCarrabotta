@@ -32,7 +32,7 @@ svg {
 .encabezado {
     position: relative;
     overflow: hidden;
-    background-color: #8a5cff;
+   
 }
 
 .titulo {
@@ -250,6 +250,7 @@ svg {
 }
 
 .servicios h2 {
+  
     color: #e5e9ed;
     font-size: 24px;
     margin-bottom: 20px;
@@ -506,7 +507,11 @@ img#logo {
 @media screen and (max-width: 768px) {
     /* Agregamos un estilo para el encabezado para que sea más compacto */
     .encabezado {
+      position: relative;
       padding: 30px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   
     /* Ajustamos el tamaño del título para dispositivos móviles */
@@ -539,9 +544,13 @@ img#logo {
   
     /* Estilos para el logotipo */
     img#logo {
-      max-width: 100px;
+      max-width: 120px;
       top: 10px;
       left: 10px;
+    }
+
+    .subTituloh2{
+        margin-left: 20px;
     }
   }
   
